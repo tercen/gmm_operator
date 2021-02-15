@@ -36,6 +36,13 @@
       "Repository": "CRAN",
       "Hash": "292b54f8f4b94669b08f94e5acce6be2"
     },
+    "Rcpp": {
+      "Package": "Rcpp",
+      "Version": "1.0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f3ca785924863b0e4c8cb23b6a5c75a1"
+    },
     "assertthat": {
       "Package": "assertthat",
       "Version": "0.2.1",
@@ -141,6 +148,13 @@
       "Repository": "CRAN",
       "Hash": "01f28d4278f15c76cddbea05899c5d6f"
     },
+    "plyr": {
+      "Package": "plyr",
+      "Version": "1.8.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "3f1b0dbcc503320e6e7aae6c3ff87eaa"
+    },
     "purrr": {
       "Package": "purrr",
       "Version": "0.3.2",
@@ -155,12 +169,33 @@
       "Repository": "CRAN",
       "Hash": "5181d5f316c7a6589219866d640e004c"
     },
+    "reshape2": {
+      "Package": "reshape2",
+      "Version": "1.4.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "15a23ad30f51789188e439599559815c"
+    },
     "rlang": {
       "Package": "rlang",
       "Version": "0.4.10",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "599df23c40a4fce9c7b4764f28c37857"
+    },
+    "stringi": {
+      "Package": "stringi",
+      "Version": "1.4.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ced3b63472796155f74abc4eb5266c78"
+    },
+    "stringr": {
+      "Package": "stringr",
+      "Version": "1.4.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "0759e6b6c0957edb1311028a49a35e76"
     },
     "teRcenHttp": {
       "Package": "teRcenHttp",
