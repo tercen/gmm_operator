@@ -12,6 +12,10 @@ Input projection|.
 `cols`        | observations
 `rows`        | variables
 
+Input parameters|.
+---|---
+`n_clusters`        | Number of components of the mixture model (clusters). If 0 (default), the optimal number of clusters between 1 and 9 will be estimated.
+
 Output relations|.
 ---|---
 `cluster`        | cluster
