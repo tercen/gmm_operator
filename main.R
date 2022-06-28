@@ -3,7 +3,9 @@ library(dplyr)
 library(mclust)
 library(reshape2)
 
-data = (ctx = tercenCtx())  %>% 
+ctx <- tercenCtx()
+
+data <- ctx %>% 
   select(.ci, .ri, .y) %>% 
   reshape2::acast(.ci ~ .ri, value.var='.y', fill=NaN, fun.aggregate=mean) 
 
@@ -17,7 +19,9 @@ if(n_clusters == 0) {
   model <- Mclust(data, G = n_clusters)
 }
 
-data.frame(.ci = seq(from = 0, to = length(model$classification) - 1),
-           cluster=paste0("cluster", model$classification)) %>%
-  ctx$addNamespace() %>%
+df_out<-data.frame(.ci = seq(from = 0, to = length(model$classification) - 1),
+                   cluster=paste0("cluster", model$classification)) %>%
+  ctx$addNamespace() 
+
+df_out %>%  
   ctx$save()
