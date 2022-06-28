@@ -3,10 +3,14 @@ library(dplyr)
 library(mclust)
 library(reshape2)
 
-options("tercen.workflowId" = "2553cb89b6ec3bc593e238e0df047713")
-options("tercen.stepId"     = "7f237d16-924d-4913-8ea5-ab44b3bed7fb")
+library(tim)
 
-data = (ctx = tercenCtx())  %>% 
+options("tercen.workflowId" = "d43b3f3e7f6562219b8ea933f1004575")
+options("tercen.stepId"     = "bc7e28eb-579d-4ec4-a1b8-8ac8f4902e55")
+
+ctx <- tercenCtx()
+
+data <- ctx %>% 
   select(.ci, .ri, .y) %>% 
   reshape2::acast(.ci ~ .ri, value.var='.y', fill=NaN, fun.aggregate=mean) 
 
@@ -20,7 +24,11 @@ if(n_clusters == 0) {
   model <- Mclust(data, G = n_clusters)
 }
 
-data.frame(.ci = seq(from = 0, to = length(model$classification) - 1),
+df_out<-data.frame(.ci = seq(from = 0, to = length(model$classification) - 1),
            cluster=paste0("cluster", model$classification)) %>%
-  ctx$addNamespace() %>%
+  ctx$addNamespace() 
+
+df_out %>%  
   ctx$save()
+
+build_test_data(df_out, ctx, test_name = "test1", test_folder = "./tests")

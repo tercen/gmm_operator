@@ -1,0 +1,24 @@
+{
+  "kind": "OperatorUnitTest",
+  "name": "test1",
+  "namespace": "ds0",
+  "inputDataUri": "test1_in.csv",
+  "outputDataUri": ["test1_out_1.csv", "test1_out_2.csv", "test1_out_3.csv"],
+  "columns": [
+    "Observation"
+  ],
+  "rows": ["Variable"],
+  "colors": [],
+  "labels": [],
+  "yAxis": "y_values",
+  "xAxis": "",
+  "generatedOn": "06/28/2022 01:52:26 PM 2022",
+  "version": "",
+  "propertyValues": [
+    {
+    "kind": "PropertyValue",
+    "name": "n_clusters",
+    "value": "0"
+    }
+  ]
+}
