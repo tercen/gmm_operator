@@ -1,6 +1,6 @@
 {
-  "name": "GMM operator",
-  "description": "Model-based clustering based on finite normal mixture modelling",
+  "name": "GMM",
+  "description": "Clusters data points using a model-based method (Gaussian Mixture Model).",
   "tags": [
     "clustering",
     "machine learning"
