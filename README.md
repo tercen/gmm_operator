@@ -8,9 +8,9 @@ Model-based clustering based on finite Gaussian Mixture Models.
 
 Input projection|.
 ---|---
-`x-axis`        | numeric, input data, per cell
-`cols`        | observations
-`rows`        | variables
+`y-axis`        | numeric, input data, per cell
+`cols`          | observations
+`rows`          | variables
 
 Input parameters|.
 ---|---
