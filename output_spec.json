@@ -1,0 +1,32 @@
+{
+  "outputSpecs": [
+    {
+      "kind": "OperatorJoinSpec",
+      "joinOperators": [
+        {
+          "kind": "JoinOperator",
+          "joinType": "left",
+          "leftPair": {
+            "kind": "ColumnPair",
+            "lColumns": [
+              "Observations"
+            ],
+            "rColumns": [
+              "Observations"
+            ]
+          },
+          "rightRelation": {
+            "kind": "TableRelation",
+            "attributes": [
+              {
+                "kind": "Attribute",
+                "name": "cluster",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
